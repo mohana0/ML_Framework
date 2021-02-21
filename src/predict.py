@@ -23,7 +23,7 @@ def predict():
         df=pd.read_csv(TEST_DATA)
         encoders = joblib.load(os.path.join("models",f"{MODEL}_{FOLD}_label_encoder.pkl"))
         cols  = joblib.load(os.path.join("models", f"{MODEL}_{FOLD}_columns.pkl)")
-        for c in encoders:
+        for c in encoders :
             lbl = encoders[c]
             df.loc[:,c]=lbl.transform(df[c].values.tolist())
 

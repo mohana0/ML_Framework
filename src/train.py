@@ -12,7 +12,7 @@ from . import dispatcher
 TODO Done : Trouver l equivalent windows de 
 export TRAINING_DATA=input/train_folds.csv
 export FOLD=0
-
+-
 python -m src.train.
 
 Ces commandes sont stockées dans un fichier *.sh
